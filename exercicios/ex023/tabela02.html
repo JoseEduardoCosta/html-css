@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+
+        }
+
+        header {
+            text-align: center;
+            background-image: linear-gradient(to right, transparent, gray, transparent);
+            box-shadow: 0 0 10px black;
+
+        }
+
+        header h1 {
+            padding-top: 20px;
+        }
+
+        header h2 {
+            padding-bottom: 20px;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(134, 131, 131);
+            color: white;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        footer {
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tabela grande</h1>
+        <h2>População dos minucíos do Piauí</h2>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Municipio</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Teresina</td>
+                    <td class="num">871.126</td>
+                </tr>
+                <tr>
+                    <td>Parnaíba</td>
+                    <td class="num">153.863</td>
+                </tr>
+                <tr>
+                    <td>Picos</td>
+                    <td class="num">78.627</td>
+                </tr>
+                <tr>
+                    <td>Piripiri</td>
+                    <td class="num">63.829</td>
+                </tr>
+                <tr>
+                    <td>Floriano</td>
+                    <td class="num">60.111</td>
+                </tr>
+                <tr>
+                    <td>Barras</td>
+                    <td class="num">47.298</td>
+                </tr>
+                <tr>
+                    <td>Campo Maior</td>
+                    <td class="num">46.950</td>
+                </tr>
+                <tr>
+                    <td>União</td>
+                    <td class="num">44.649</td>
+                </tr>
+                <tr>
+                    <td>Altos</td>
+                    <td class="num">40.611</td>
+                </tr>
+                <tr>
+                    <td>Esperantina</td>
+                    <td class="num">39.953</td>
+                </tr>
+                <tr>
+                    <td>José de Freitas</td>
+                    <td class="num">39.457</td>
+                </tr>
+                <tr>
+                    <td>Pedro II</td>
+                    <td class="num">38.812</td>
+                </tr>
+                <tr>
+                    <td>Oeiras</td>
+                    <td class="num">37.138</td>
+                </tr>
+                <tr>
+                    <td>São Raimundo Nonato</td>
+                    <td class="num">35.035</td>
+                </tr>
+                <tr>
+                    <td> Miguel Alves</td>
+                    <td class="num">33.901</td>
+                </tr>
+                <tr>
+                    <td>Luís Correia</td>
+                    <td class="num">30.558</td>
+                </tr>
+                <tr>
+                    <td>Piracuruca</td>
+                    <td class="num">28.952</td>
+                </tr>
+                <tr>
+                    <td>Cocal</td>
+                    <td class="num">27.901</td>
+                </tr>
+                <tr>
+                    <td>Batalha</td>
+                    <td class="num">26.951</td>
+                </tr>
+                <tr>
+                    <td>Corrente</td>
+                    <td class="num">26.771</td>
+                </tr>
+                <tr>
+                    <td>Luzilândia</td>
+                    <td class="num">25.521</td>
+                </tr>
+                <tr>
+                    <td>Bom Jesus</td>
+                    <td class="num">25.584</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>População Total:</th>
+                    <td class="num"><strong>1.823.598</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>Tabela copiado da <a href="#">Wikipedia</a> para conteúdo do capítulo 21 do <a href="#">CursoemVideo</a>.</p>
+    </footer>
+
+</body>
+
+</html>
