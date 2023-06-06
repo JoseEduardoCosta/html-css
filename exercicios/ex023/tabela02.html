@@ -33,17 +33,40 @@
         }
 
         table {
-            width: 300px;
             border-collapse: collapse;
             margin: auto;
-            margin-top: 20px;
+            margin-top: 30px;
             margin-bottom: 20px;
+            position: relative;
+        }
+
+        caption {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 50px 10px 0 0;
+
         }
 
         thead,
         tfoot {
             background-color: rgb(134, 131, 131);
             color: white;
+        }
+
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(134, 131, 131);
+        }
+
+        tbody tr:nth-child(odd) {
+            /*ODD é impar*/
+            background-color: lightcyan;
+        }
+
+        tbody tr:nth-child(even) {
+            /*EVEN é par*/
+            background-color: lightblue;
         }
 
         tr,
@@ -84,6 +107,7 @@
     </header>
     <main>
         <table>
+            <caption>Caption de legenda da tabela</caption>
             <thead>
                 <tr>
                     <th>Municipio</th>
