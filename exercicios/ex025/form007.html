@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Formulário 007 Elementos sem imput: Select, Datalist e Textarea</legend>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Primeira grade">
+                        <option value="ex1">exemplo 1</option>
+                        <option value="ex2">exemplo 2</option>
+                        <option value="ex3">exemplo 3</option>
+                        <option value="ex4">exemplo 4</option>
+                    </optgroup>
+
+                    <optgroup label="Segunda grade">
+                        <option value="ex5">exemplo 5</option>
+                        <option value="ex6">exemplo 6</option>
+                        <option value="ex7">exemplo 7</option>
+                        <option value="ex7">exemplo 8</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="list">
+                <datalist id="list">
+                    <option>Profissão 1</option>
+                    <option>Profissão 2</option>
+                    <option>Profissão 3</option>
+                    <option>Profissão 4</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="5"
+                    placeholder="Escreva uma declaração aqui...!"></textarea>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+
+</html>
