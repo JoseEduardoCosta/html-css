@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulario</h1>
+    <fieldset>
+        <legend>Formulário 004 Email e Telefone</legend>
+        <form action="cadastro.php" autocomplete="on">
+            <p>
+                <label for="iemail">Email:*</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email"
+                    placeholder="gado-do-acre@email.com">
+            </p>
+
+            <p>
+                <label for="itel">Telefone:*</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                    placeholder="(xx)xxxxx-xxxx">
+                <!-- estudar sobre RegEx - Expressoes regulares (é o que ta no pattern) -->
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

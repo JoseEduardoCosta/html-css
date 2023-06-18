@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        fieldset {
+            width: 300px;
+            margin: auto;
+        }
+
+        .btn {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de formulário</h1>
+    <fieldset>
+        <legend>Formulário 005 checkbox e radio</legend>
+        <form action="cadastro.php">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="im" value="M">
+                <label for="im">Masculino</label> <br>
+                <input type="radio" name="sexo" id="if" value="F">
+                <label for="if">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>Esportesb Favoritos</legend>
+                <input type="checkbox" name="esba" id="iesba">
+                <label for="iesba">Basket</label> <br>
+                <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esna" id="iesna">
+                <label for="iesna">Natação</label> <br>
+                <input type="checkbox" name="este" id="ieste">
+                <label for="ieste">Tênis</label> <br>
+                <input type="checkbox" name="esfutsa" id="iesfutsa">
+                <label for="iesfutsa">Futsal</label> <br>
+                <input type="checkbox" name="esvo" id="iesvo">
+                <label for="iesvo">Vôlei</label> <br>
+                <input type="checkbox" name="esta" id="iesta">
+                <label for="iesta">Talarico</label> <br>
+
+            </fieldset>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
