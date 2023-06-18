@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,8 +18,8 @@
         <form action="cadastro.php" method="post">
             <p>
                 <label for="iest">Estado:</label>
-                <select name="estado" id="iest">
-                    <option value="" selected>---Escolha---</option>
+                <select name="estado" id="iest" required>
+                    <option value="" selected disabled>---Escolha---</option>
                     <optgroup label="Primeira grade">
                         <option value="ex1">exemplo 1</option>
                         <option value="ex2">exemplo 2</option>
@@ -32,7 +37,7 @@
             </p>
             <p>
                 <label for="iprof">Profissão:</label>
-                <input type="text" name="prof" id="iprof" list="list">
+                <input type="text" name="prof" id="iprof" list="list" required>
                 <datalist id="list">
                     <option>Profissão 1</option>
                     <option>Profissão 2</option>
