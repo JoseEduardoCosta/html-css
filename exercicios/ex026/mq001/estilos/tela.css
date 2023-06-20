@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* media querye pra telas */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+header h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style: none;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: goldenrod;
+    color: white;
+
+}
+
+article {
+    width: 60%;
+    margin: auto;
+    background-color: gray;
+    padding-top: 20px;
+}
+
+article h2 {
+    width: 95%;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    background-color: crimson;
+    margin: auto;
+    color: white;
+}
+
+article p {
+    text-align: justify;
+    margin-top: 30px;
+    padding: 15px;
+}
