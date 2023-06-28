@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url('../img/fundo.jpg');
+        background-size: cover;
+    }
+
+    section#login {
+        width: 75vw;
+    }
+
+    div#imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: left center;
+    }
+
+    div#form {
+        float: right;
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background-image: url('../img/fundo.jpg');
+        background-size: cover;
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#form {
+        float: right;
+        width: 50%;
+    }
+}

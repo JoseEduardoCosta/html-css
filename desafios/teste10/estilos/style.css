@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #542B8C;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.548);
+
+    /* com isso não preciso arrendondar a borda da imagem, pq vai esconder tudo que fica de fora do section */
+    overflow: hidden;
+    /* bota uma transição entre as mudanças de media query */
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#imagem {
+    display: block;
+    background: #542B8C url('../img/login.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+div#form {
+    display: block;
+    padding: 10px;
+}
