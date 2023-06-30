@@ -28,7 +28,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.548);
 
     /* com isso não preciso arrendondar a borda da imagem, pq vai esconder tudo que fica de fora do section */
@@ -36,6 +35,7 @@ section#login {
     /* bota uma transição entre as mudanças de media query */
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 div#imagem {
@@ -53,4 +53,86 @@ div#form {
 div#form h1 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+div#form p {
+    text-align: center;
+}
+
+div.campo {
+    background-color: #395a85;
+    border: 2px solid #395a85;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+div.campo label {
+    display: none;
+}
+
+div.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input {
+    background-color: #542B8C;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY(-14px);
+}
+
+
+div.campo input:focus-within {
+    background-color: white;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: #542B8C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #8746e2;
+
+}
+
+a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    padding-top: 4px;
+    margin-top: 5px;
+    background-color: white;
+    color: #542B8C;
+    text-decoration: none;
+    border: 1px solid #542B8C;
+    border-radius: 5px;
+}
+
+a.botao:hover {
+    background-color: #9F63F2;
+    color: white;
+}
+
+a.botao span {
+    font-size: .9em;
 }
